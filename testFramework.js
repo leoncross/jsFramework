@@ -5,11 +5,10 @@ Test.prototype.test_equal = function (argument, expectedValue) {
   try {
     if (isNaN(expectedValue)) throw new Error ("expected value is not a number")
     if (argument !== expectedValue) throw new Error ("doesnt equal the expected value")
-    if (argument === expectedValue) console.log("%cPass", "color: green")
+    if (argument === expectedValue) console.log("%c - Pass", "color: green")
     }
   catch(err) {
-    console.log(err.stack)
-    console.log("%c" + err.stack, "color: red")
+    console.log("%c - " + err.stack, "color: red")
   }
 }
 
