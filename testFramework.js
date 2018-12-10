@@ -14,3 +14,4 @@ Test.prototype.comparison = function (argument1, expectedvalue) {
 var square = new Square(2)
 var test = new Test ()
 test.comparison(square.area(), 4)
+test.comparison(square.perimeter(), 8)
